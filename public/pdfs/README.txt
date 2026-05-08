@@ -1,0 +1,1 @@
+This folder contains PDF files (placeholders created). Replace with real PDFs.
