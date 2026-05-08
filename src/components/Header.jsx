@@ -11,7 +11,7 @@ const Header = ({ isDarkMode, onToggleTheme }) => {
     { id: 'about', label: 'About' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
-    { id: 'certifications', label: 'Certifications & Publications' },
+    { id: 'certifications', label: 'Certifications' },
     { id: 'achievements', label: 'Achievements' },
     { id: 'experience', label: 'Experience' },
     { id: 'contact', label: 'Contact' },
@@ -78,9 +78,9 @@ const Header = ({ isDarkMode, onToggleTheme }) => {
               </a>
             ))}
           </nav>
+          <ThemeToggle isDarkMode={isDarkMode} onToggle={onToggleTheme} />
         </div>
       </div>
-      <ThemeToggle isDarkMode={isDarkMode} onToggle={onToggleTheme} />
       <style jsx>{`
         .header {
           position: fixed;
@@ -129,7 +129,7 @@ const Header = ({ isDarkMode, onToggleTheme }) => {
         
         .nav-links {
           display: flex;
-          gap: 2rem;
+          gap: 1.5rem;
         }
         
         .nav-links a {
@@ -161,7 +161,7 @@ const Header = ({ isDarkMode, onToggleTheme }) => {
           width: 100%;
         }
         
-        @media (max-width: 768px) {
+        @media (max-width: 1024px) {
           .mobile-menu-btn {
             display: block;
           }
